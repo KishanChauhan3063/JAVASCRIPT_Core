@@ -1,0 +1,1730 @@
+JavaScript can "display" data in different ways:
+
+    Writing into an HTML element, using innerHTML.
+    Writing into the HTML output using document.write().
+    Writing into an alert box, using window.alert().
+    Writing into the browser console, using console.log().
+
+<--------------------------------------------------------------------->    
+
+To access an HTML element, JavaScript can use the document.getElementById(id) method.
+
+The id attribute defines the HTML element. The innerHTML property defines the HTML content:
+
+<--------------------------------------------------------------------->
+
+JavaScript Values
+
+The JavaScript syntax defines two types of values:
+
+    Fixed values
+    Variable values
+
+Fixed values are called Literals.
+
+Variable values are called Variables.
+
+<--------------------------------------------------------------------->
+
+JavaScript Variables
+
+In a programming language, variables are used to store data values.
+
+JavaScript uses the keywords var, let and const to declare variables.
+
+An equal sign is used to assign values to variables.
+
+<--------------------------------------------------------------------->
+
+JavaScript has 8 Datatypes
+
+1. String
+2. Number
+3. Bigint
+4. Boolean
+5. Undefined
+6. Null
+7. Symbol
+8. Object
+The Object Datatype
+
+The object data type can contain:
+
+1. An object
+2. An array
+3. A date
+
+<--------------------------------------------------------------------->
+
+JavaScript Assignment Operators
+
+Assignment operators assign values to JavaScript variables.
+
+Operator 	   Example 	  Same As
+= 	         x = y 	    x = y
++= 	         x += y 	  x = x + y
+-= 	         x -= y 	  x = x - y
+*= 	         x *= y 	  x = x * y
+/= 	         x /= y 	  x = x / y
+%= 	         x %= y 	  x = x % y
+**= 	       x **= y 	  x = x ** y
+
+Shift Assignment Operators
+
+Operator 	Example 	Same As
+<<= 	    x <<= y 	x = x << y
+>>= 	    x >>= y 	x = x >> y
+>>>= 	    x >>>= y 	x = x >>> y
+
+Bitwise Assignment Operators
+
+Operator 	  Example 	  Same As
+&= 	        x &= y 	    x = x & y
+^= 	        x ^= y 	    x = x ^ y
+|= 	        x |= y 	    x = x | y
+
+Logical Assignment Operators
+
+Operator 	Example 	Same As
+&&= 	    x &&= y 	x = x && (x = y)
+||= 	    x ||= y 	x = x || (x = y)
+??= 	    x ??= y 	x = x ?? (x = y)
+
+<--------------------------------------------------------------------->
+
+Comparison and Logical operators are used to test for true or false.
+
+Comparison Operators
+
+Comparison operators are used in logical statements to determine equality or difference between variables or values.
+
+Given that x = 5, the table below explains the comparison operators:
+
+Operator 	Description 	                    Comparing 	Returns 
+== 	      equal to 	                          x == 8 	    false 	
+                                              x == 5 	    true 	
+                                              x == "5" 	  true 	
+=== 	    equal value and equal type 	        x === 5 	  true 	
+                                              x === "5" 	false 	
+!=      	not equal 	                        x != 8 	    true 	
+!== 	    not equal value or not equal type 	x !== 5 	  false 	
+                                              x !== "5" 	true 	
+                                              x !== 8 	  true 	
+> 	      greater than 	                      x > 8 	    false 	
+< 	      less than 	                        x < 8 	    true 	
+>=      	greater than or equal to 	          x >= 8 	    false 	
+<= 	      less than or equal to           	  x <= 8 	    true
+
+<--------------------------------------------------------------------->
+
+JavaScript if, else, and else if
+
+Conditional statements are used to perform different actions based on different conditions.
+Conditional Statements
+
+Very often when you write code, you want to perform different actions for different decisions.
+
+You can use conditional statements in your code to do this.
+
+In JavaScript we have the following conditional statements:
+
+    Use if to specify a block of code to be executed, if a specified condition is true
+    Use else to specify a block of code to be executed, if the same condition is false
+    Use else if to specify a new condition to test, if the first condition is false
+    Use switch to specify many alternative blocks of code to be executed
+
+
+The if Statement
+
+Use the if statement to specify a block of JavaScript code to be executed if a condition is true.
+Syntax
+if (condition) {
+  //  block of code to be executed if the condition is true
+}
+
+The else Statement
+
+Use the else statement to specify a block of code to be executed if the condition is false.
+if (condition) {
+  //  block of code to be executed if the condition is true
+} else {
+  //  block of code to be executed if the condition is false
+}
+
+The else if Statement
+
+Use the else if statement to specify a new condition if the first condition is false.
+Syntax
+if (condition1) {
+  //  block of code to be executed if condition1 is true
+} else if (condition2) {
+  //  block of code to be executed if the condition1 is false and condition2 is true
+} else {
+  //  block of code to be executed if the condition1 is false and condition2 is false
+}
+
+<--------------------------------------------------------------------->
+
+Ternary Operator
+
+The ternary operator is a simplified conditional operator like if / else.
+
+Syntax: condition ? <expression if true> : <expression if false>
+
+<--------------------------------------------------------------------->
+
+The JavaScript Switch Statement
+
+Use the switch statement to select one of many code blocks to be executed.
+
+Syntax
+
+switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
+
+<--------------------------------------------------------------------->
+
+JavaScript Functions
+
+JavaScript functions are used to perform operations. We can call JavaScript function many times to reuse the code.
+
+Advantage of JavaScript function
+
+There are mainly two advantages of JavaScript functions.
+
+1.    Code reusability: We can call a function several times so it save coding.
+
+2.    Less coding: It makes our program compact. We don’t need to write many lines of code each time to perform a common task.
+
+JavaScript Function Syntax
+
+The syntax of declaring function is given below.         
+
+function functionName([arg1, arg2, ...argN])
+{  
+      //code to be executed  
+}
+
+<--------------------------------------------------------------------->
+
+JavaScript Functions(paramet)
+
+function Name(paramet1, paramet2, paramet3,...) 
+{
+     // Statements
+}
+
+Parameter Rules: 
+
+    There is no need to specify the data type for parameters in JavaScript function definitions.
+
+    It does not perform type-checking based on the passed-in JavaScript functions.
+    It does not check the number of received arguments.
+
+Parameters: 
+
+    Name: It is used to specify the name of the function.
+    Arguments: It is provided in the argument field of the function.
+
+<--------------------------------------------------------------------->
+JavaScript Functions(return)
+
+return value;
+
+Parameters
+Parameter 	Description
+value 	Optional.
+The value to be returned.
+If omitted, it returns undefined
+
+<--------------------------------------------------------------------->
+
+<--------------------------------------------------------------------->
+Global Variable:
+
+These are variables that are defined in global scope i.e. outside of functions. These variables have global scope, so they can be accessed by any function directly. In the case of global scope variables, the keyword they are declared with does not matter they all act the same. A variable declared without a keyword is also considered global even though it is declared in the function.
+<--------------------------------------------------------------------->
+
+<--------------------------------------------------------------------->
+Local Variable: 
+
+When you use JavaScript, local variables are variables that are defined within functions. They have local scope, which means that they can only be used within the functions that define them. Accessing them outside the function will throw an error
+<--------------------------------------------------------------------->
+Basic Events:
+
+The change in the state of an object is known as an Event. In html, there are various events which represents that some activity is performed by the user or by the browser. When javascript code is included in HTML, js react over these events and allow the execution. This process of reacting over the events is called Event Handling. Thus, js handles the HTML events via Event Handlers.
+
+For example, when a user clicks over the browser, add js code, which will execute the task to be performed on the event.
+
+Some of the HTML events and their event handlers are:
+
+<--------------------------------------------------------------------->
+
+
+The while loop loops through a block of code as long as a specified condition is true.
+Syntax
+
+while (condition) 
+{
+    // code block to be executed
+}
+
+<--------------------------------------------------------------------->
+
+<--------------------------------------------------------------------->
+A do… while loop in JavaScript is a control statement in which the code is allowed to execute continuously based on a given boolean condition. It is like a repeating if statement.
+
+The do…while loop can be used to execute a specific block of code at least once.
+Syntax:
+
+do {
+    // Statements
+}
+while(conditions)
+
+The main difference between do…while and while loop is that it is guaranteed that do…while loop will run at least once. Whereas, the while loop will not run even once if the given condition is not satisfied.
+<--------------------------------------------------------------------->
+
+<--------------------------------------------------------------------->
+The for statement creates a loop with 3 optional expressions:
+
+for (expression 1; expression 2; expression 3)
+{
+       // code block to be executed
+}
+
+               
+Expression 1 is executed (one time) before the execution of the code block.
+Expression 2 defines the condition for executing the code block.
+Expression 3 is executed (every time) after the code block has been executed.
+<--------------------------------------------------------------------->
+
+<--------------------------------------------------------------------->
+
+Continue statement: 
+
+The continue statement “jumps over” one iteration in the loop. It breaks iteration in the loop and continues executing the next iteration in the loop.
+syntex:        
+
+continue labelname;
+
+    for(var a = 1; a <= 10; a++){
+      if(a == 3){
+        document.write("Hey : " + a + "<br>");
+        continue;
+        break;
+      }
+      document.write("Number : " + a + "<br>");
+    }
+  
+<---------------------------------------------------------------------> 
+
+<---------------------------------------------------------------------> 
+
+Break Statement:
+
+The break statement is used to jump out of a loop. It can be used to “jump out” of a switch() statement. It breaks the loop and continues executing the code after the loop.
+
+<---------------------------------------------------------------------> 
+
+The nested for loop in JavaScript
+
+A simple for loop executes a specified number of times depending on the initialization value and the terminating condition. A nested for loop on the other hand, resides one or more for loop inside an outer for loop.
+
+In a nested loop the statement inside the for loop body is again a for loop. This causes The inside for loop to execute all the way through , for each iteration of the outer for loop.
+ 
+
+for(let i = 0 ; i < limit; i++)
+{
+   for(let j = 0 ; j < limit; j++)
+   {
+      // statement
+   }
+   // statement for outer loop
+}
+
+The inside loop in this example runs limit number of times for every iteration of the outer loop. So, in total, the loop runs limit x limit number of times.
+
+The initialization value, terminating condition as well as updating of the loop variables for both loops are independent of one another.
+
+
+The most common type of nested loops will be one loop inside another. The first loop is usually called the outer loop while the second loop is called the inner loop. The outer loop always executes first, and the inner loop executes inside the outer loop each time the outer loop executes once.
+
+A nested loop is a (inner) loop that appears in the loop body of another (outer) loop. The inner or outer loop can be any type: while, do while, or for. For example, the inner loop can be a while loop while an outer loop can be a for loop. Of course, they can be the same kind of loops too.
+
+<--------------------------------------------------------------------->
+
+<--------------------------------------------------------------------->
+
+JavaScript Array is a single variable that is used to store elements of different data types. JavaScript arrays are zero-indexed. The Javascript Arrays are not associative in nature.
+
+Arrays are used when we have a list of items. An array allows you to store several values with the same name and access them by using their index number.
+Declaration of an Array
+
+There are basically two ways to declare an array.
+1. JavaScript array literal
+
+The syntax of creating array using array literal is given below:
+
+var arrayname=[value1,value2.....valueN];  
+
+2. JavaScript Array directly (new keyword)
+
+The syntax of creating array directly is given below:
+
+var arrayname=new Array();  
+
+Here, new keyword is used to create instance of array.
+
+
+The syntax of creating array directly is given below:
+
+var arrayname=new Array();  
+
+Here, new keyword is used to create instance of array.
+
+
+Multidimensional arrays are not directly provided in JavaScript. If we want to use anything which acts as a multidimensional array then we need to create a multidimensional array by using another one-dimensional array. So multidimensional arrays in JavaScript is known as arrays inside another array. We need to put some arrays inside an array, then the total thing is working like a multidimensional array. The array, in which the other arrays are going to insert, that array is use as the multidimensional array in our code. To define a multidimensional array its exactly the same as defining a normal one-dimensional array. 
+One-Dimensional array:
+
+var arr = []; // Empty 1D array
+var arr1 = ["A", "B", "C", "D"] // 1D array contains some alphabets
+var arr1 = [1, 2, 3, 4, 5] // 1D array contains some digits
+
+
+Modify Array Element
+
+Array elements are accessed using their index number:
+
+Array indexes start with 0:
+
+[0] is the first array element
+[1] is the second
+[2] is the third ...
+
+Delete Array Element
+
+Array elements can be deleted using the JavaScript operator delete.
+
+Using delete leaves undefined holes in the array.
+<--------------------------------------------------------------------->
+
+<--------------------------------------------------------------------->
+
+Array Method.
+
+Sort()                       slice()                 find()
+reverse()                    splice()                findindex()
+pop()                        is Array()              includes()
+push()                       indexof()               some()
+shift()                      lastindexof()           foreach()
+unshift()                    entries()               tostring()
+concat()                     every()                 valueof()
+join()                       filter()                fill()
+
+
+Sorting an Array
+
+The sort() sorts the elements of an array.
+
+The sort() overwrites the original array.
+
+The sort() sorts the elements as strings in alphabetical and ascending order.
+
+Syntax
+
+array.sort()
+
+
+Reversing an Array
+
+The reverse() method reverses the order of the elements in an array.
+
+The reverse() method overwrites the original array.
+
+Syntax
+
+array.reverse()
+
+
+Array Pop()
+
+The pop() method removes (pops) the last element of an array.
+
+The pop() method changes the original array.
+
+The pop() method returns the removed element.
+
+Syntax
+
+array.pop()???????
+
+
+Array push()
+
+The push() method adds new items to the end of an array.
+
+The push() method changes the length of the array.
+
+The push() method returns the new length.
+
+Syntax
+
+array.push(item1, item2, ..., itemX)
+
+
+shift()
+
+The shift() method removes the first item of an array.
+
+The shift() method changes the original array.
+
+The shift() method returns the shifted element.
+
+Syntax
+
+array.shift()
+
+
+unshift()
+
+The unshift() method adds new elements to the beginning of an array.
+
+The unshift() method overwrites the original array.
+
+Syntax
+
+array.unshift(item1, item2, ..., itemX)
+
+
+Array concat()
+
+The JavaScript Array concat() Method is used to merge two or more arrays together. This method does not alter the original arrays passed as arguments but instead, returns a new Array.
+
+Syntax:
+
+let newArray1 = oldArray.concat()
+let newArray2 = oldArray.concat(value0)
+let newArray3 = oldArray.concat(value0,value1)
+     .......
+     .......
+let newArray = oldArray.concat(value1 , [ value2, [ ...,[ valueN]]])
+
+Parameters: 
+
+The parameters of this method are the arrays or the values that need to be added to the given array. The number of arguments to this method depends upon the number of arrays or values to be merged.
+
+Return value: 
+
+This method returns a newly created array that is created after merging all the arrays passed to the method as arguments.
+
+
+Array join()
+
+The join() method returns an array as a string.
+
+The join() method does not change the original array.
+
+Any separator can be specified. The default is comma (,).
+
+Syntax
+
+array.join(separator)
+
+Parameters
+Parameter 	Description
+separator 	Optional.
+The separator to be used.
+Default is a comma.
+
+
+Array slice()
+
+The slice() method returns selected elements in an array, as a new array.
+
+The slice() method selects from a given start, up to a (not inclusive) given end.
+
+The slice() method does not change the original array.
+
+Syntax
+
+array.slice(start, end)
+
+
+Array splice()
+
+The splice() method adds and/or removes array elements.
+
+The splice() method overwrites the original array.
+
+Syntax
+
+array.splice(index, howmany, item1, ....., itemX)
+
+The isArray() method returns true if an object is an array, otherwise false.
+
+
+Array.isArray()
+
+Array.isArray() is a static property of the JavaScript Array object.
+
+You can only use it as Array.isArray().
+
+Using x.isArray(), where x is an array will return undefined.
+
+Syntax
+
+Array.isArray(obj)
+
+Parameters
+
+Parameter 	Description
+obj 	      Required.An object (or any data type) to be tested.
+
+Return Value
+
+Type 	      Description
+A boolean 	true if the object is an array, otherwise false.
+
+
+Array indexOf()
+
+The JavaScript Array indexOf() Method is used to find the index of the first occurrence of the search element provided as the argument to the method. This method always compares the search element to the element present in the array using strict equality. Therefore, when the search element is NaN then it returns -1 because NaN values are never compared as equal.
+
+Syntax: 
+
+array.indexOf(element, start)
+
+
+Parameters: This method accepts two parameters as mentioned above and described below: 
+
+    element: This parameter holds the element whose index will be returned.
+    start: This parameter is optional and it holds the starting point of the array, where to begin the search the default value is 0.
+
+Return value: This method returns the index of the first occurrence of the element. If the element cannot be found in the array, then this method returns -1.
+
+
+Array entries()
+
+The entries() method returns an Array Iterator object with key/value pairs:
+
+[0, "Banana"]
+[1, "Orange"]
+[2, "Apple"]
+[3, "Mango"]
+
+The entries() method does not change the original array.
+
+Syntax
+
+array.entries()
+
+
+Array every()
+
+The Javascript Array.every() method considers all the elements of an array and then further checks whether all the elements of the array satisfy the given condition (passed by in user) or not that is provided by a method passed to it as the argument.
+
+Syntax:
+
+// Arrow function
+every((element) => { /* … */ })
+every((element, index) => { /* … */ })
+every((element, index, array) => { /* … */ })
+
+// Callback function
+every(callbackFn)
+every(callbackFn, thisArg)
+
+// Inline callback function
+every(function (element) { /* … */ })
+every(function (element, index) { /* … */ })
+every(function (element, index, array) { /* … */ })
+every(function (element, index, array) { /* … */ }, thisArg)
+
+
+Array filter()
+
+The filter() method creates a new array filled with elements that pass a test provided by a function.
+
+The filter() method does not execute the function for empty elements.
+
+The filter() method does not change the original array.
+
+
+Syntax
+
+array.filter(function(currentValue, index, arr), thisValue)
+
+
+Array find() Method
+
+The Javascript arr.find() method in Javascript is used to get the value of the first element in the array that satisfies the provided condition. It checks all the elements of the array and whichever the first element satisfies the condition is going to print. This function will not work function having the empty array elements and also does not change the original array.
+
+Syntax:
+
+array.find(function(currentValue, index, arr),thisValue);
+
+
+Array findIndex() Method
+
+The Javascript Array.findIndex() method is used to return the first index of the element in a given array that satisfies the provided testing function (passed in by the user while calling). Otherwise, if no data is found then the value of -1 is returned.
+
+    It does not execute the method once it finds an element satisfying the testing method.
+    It does not change the original array.
+
+Syntax:
+
+array.findIndex(function(currentValue, index, arr), thisValue)
+
+
+The includes() method returns true if an array contains a specified value.
+
+The includes() method returns false if the value is not found.
+
+The includes() method is case sensitive.
+
+Syntax
+
+array.includes(element, start)
+
+The includes() method returns true if an array contains a specified value.
+
+The includes() method returns false if the value is not found.
+
+The includes() method is case sensitive.
+
+Syntax
+
+array.includes(element, start)
+
+
+Array some()
+
+The Javascript arr.some() method checks whether at least one of the elements of the array satisfies the condition checked by the argument method. 
+
+Syntax
+
+arr.some(callback(element,index,array),thisArg)
+
+
+Array foreach()
+
+The forEach() method calls a function for each element in an array.
+
+The forEach() method is not executed for empty elements.
+
+Syntax
+
+array.forEach(function(currentValue, index, arr), thisValue)
+
+
+Array toString() Method
+
+The JavaScript Array toString() Method returns the string representation of the array elements
+
+Syntax:
+
+arr.toString()
+
+
+Array valueOf() Method
+
+The JavaScript Array valueOf() method in JavaScript is used to return the array. It is a default method of the Array Object. This method returns all the items in the same array. It will not change the original content of the array. It does not contain any parameter values. 
+
+Syntax:
+
+array.valueOf()
+
+
+Array fill() Method
+
+The fill() method fills specified elements in an array with a value.
+
+The fill() method overwrites the original array.
+
+Start and end position can be specified. If not, all elements will be filled.
+
+Syntax
+
+array.fill(value, start, end)
+
+<--------------------------------------------------------------------->
+
+<--------------------------------------------------------------------->
+
+
+A javaScript object is an entity having state and behavior (properties and method). For example: car, pen, bike, chair, glass, keyboard, monitor etc.
+
+JavaScript is an object-based language. Everything is an object in JavaScript.
+
+JavaScript is template based not class based. Here, we don't create class to get the object. But, we direct create objects.
+Creating Objects in JavaScript
+There are 3 ways to create objects.
+
+    By object literal
+    By creating instance of Object directly (using new keyword)
+    By using an object constructor (using new keyword)
+
+(1) JavaScript Object by object literal
+
+The syntax of creating object using object literal is given below:    
+
+object={property1:value1,property2:value2.....propertyN:valueN}  
+
+ 
+(2) By creating instance of Object
+
+The syntax of creating object directly is given below:      
+
+var objectname=new Object();  
+
+ 
+(3) By using an Object constructor
+
+Here, you need to create function with arguments. Each argument value can be assigned in the current object by using this keyword.
+
+The this keyword refers to the current object.
+
+
+The Array object lets you store multiple values in a single variable. It stores a fixed-size sequential collection of elements of the same type. An array is used to store a collection of data, but it is often more useful to think of an array as a collection of variables of the same type.
+
+Syntax
+
+Use the following syntax to create an Array object −
+ 
+
+var fruits = new Array( "apple", "orange", "mango" );
+
+The Array parameter is a list of strings or integers. When you specify a single numeric parameter with the Array constructor, you specify the initial length of the array. The maximum length allowed for an array is 4,294,967,295.
+
+
+CONST ARRAYS
+
+The code above has an array variable called numbers holding three values. Even though the numbers array is a const you’re able to update or change the variable. For example, you can add another number to the numbers array by using the push method. Methods are actions you perform on the array or object.
+
+const numbers = [1,2,3];
+numbers.push(4);
+console.log(numbers) // Outpusts [1,2,3,4];
+
+CONST OBJECTS
+
+The modifying principle applies to an object for example.
+
+const user = {
+  name: "Gary",
+}
+
+user.age = 29
+console.log(user) // {name: "Gary", age: 29}
+ 
+
+The code above creates a user object with a name property then it assigns a new age property to object. One thing to remember const does not stop array and objects from being modified it only stops the variable itself from being reassigned or being overwritten for example.
+
+const user = {
+  name: "Gary",
+}
+
+person = { name: "Bob" } // Uncaught TypeError: Assignment to constant variable.
+<---------------------------------------------------------------------> 
+
+<--------------------------------------------------------------------->
+
+For-in loop in JavaScript is used to iterate over the properties of an object. It can be a great debugging tool if we want to show the contents of an object. The for-in loop iterates only over those keys of an object which have their enumerable property set to “true”. The key values in an object have four attributes (value, writable, enumerable, and configurable). Enumerable when set to “true” means that we can iterate over that property. 
+
+Syntax
+
+ for (key in object) {
+       // code block to be executed
+}
+<--------------------------------------------------------------------->
+
+<--------------------------------------------------------------------->
+map() creates a new array from calling a function for every array element.
+
+map() does not execute the function for empty elements.
+
+map() does not change the original array.
+
+Syntax
+
+class = "table table-striped table-bordered"
+
+<--------------------------------------------------------------------->
+
+<--------------------------------------------------------------------->
+
+String Methods
+
+length()                       indexOf()                 concat()
+to Lower Case()                lastIndexOf()             split()
+to Upper Case()                replace()                 repeat()
+includes()                     trim()                    slice()
+startsWith()                   charAt()                  substr()
+endsWith()                     charCodeAt()              substring()
+search()                       formCharCode()            tostring()
+match()                                                  valueaOf()
+
+
+length() 
+
+The length property returns the length of a string:
+
+
+toLowerCase()
+
+Converts the entire string to lowercase.
+
+toLocaleLowerCase() 	
+
+Returns the calling string value converted to a lowercase letter.
+
+
+toUpperCase() 	
+
+Converts the entire string to uppercase.
+
+toLocaleUpperCase() 	
+
+Returns the calling string value converted to a uppercase letter.
+
+
+includes() 	
+
+Returns true if the string contains the characters, otherwise, it returns false.
+
+
+startsWith() 	
+
+Check whether the given string starts with the characters of the specified string or not.
+
+
+endsWith() 	
+
+Whether the given string ends with the characters of the specified string or not.
+
+
+search() 	
+
+Search for a match in between regular expressions and a
+
+
+match() 	
+
+Search a string for a match against any regular expression.
+
+matchAll() 	
+
+Return all the iterators matching the reference string against a regular expression.
+
+
+indexOf() 	
+
+Finds the index of the first occurrence of the argument string in the given string.
+
+
+lastIndexOf() 	
+
+Finds the index of the last occurrence of the argument string in the given string.
+
+
+replace() 	
+
+Replace a part of the given string with some another string or a regular expression
+
+replaceAll() 	
+
+Returns a new string after replacing all the matches of a string with a specified string/regex.
+
+
+trim() 
+
+Remove the white spaces from both ends of the given string.
+
+trimEnd() 	
+
+Remove white space from the end of a string.
+
+trimStart() 	
+
+Remove white space from the start of a string.
+
+
+charAt() 	
+
+Returns that character at the given index of the string.
+
+charCodeAt() 	
+
+Returns a Unicode character set code unit of the character present at the index in the string.
+
+codePointAt() 	
+
+Return a non-negative integer value i.e, the code point value of the specified element.
+
+
+The String.fromCharCode() 
+
+method converts Unicode values to characters. is a static method of the String object.
+
+Syntax
+
+String.fromCharCode(n1, n2, ..., nX)
+
+
+concat() 	
+
+Join two or more strings together in JavaScript.
+
+
+split() 	
+
+Separate given string into substrings using a specified separator provided in the argument.
+
+
+repeat() 	
+
+Build a new string containing a specified number of copies of the string.
+
+
+slice() 	
+
+Return a part or slice of the given input string.
+
+
+substr() 
+
+Returns the specified number of characters from the specified index from the given string.
+
+substring() 	
+
+Return the part of the given string from the start index to the end index.
+
+
+toString() 	
+
+Return the given string itself.
+
+
+valueOf() 	
+
+Return the value of the given string.
+
+<--------------------------------------------------------------------->
+
+Number Methods
+
+number()
+parselnt()
+parseFloat()
+isFinite()
+isInteger()                       
+toFixed(x)
+toPrecision()
+
+
+toString() 
+
+Returns a number as a string
+
+toExponential() 	
+
+Returns a number written in exponential notation
+
+toFixed() 	
+
+Returns a number written with a number of decimals
+
+toPrecision() 	
+
+Returns a number written with a specified length
+
+ValueOf() 	
+
+Returns a number as a number
+
+
+<--------------------------------------------------------------------->
+
+Math Methods
+
+ceil(x)                             sqrt(x)
+floor(x)                            cbrt(x)
+round(x)                            pow(x)
+trunc(x)                            random(x)
+max(x,y,z,...,n)                    abs(x)
+min(x,y,z,...,n)                    PI
+
+
+ceil() 	
+
+It returns a smallest integer value, greater than or equal to the given number.
+
+floor() 	
+
+It returns largest integer value, lower than or equal to the given number.
+
+round() 	
+
+It returns closest integer value of the given number.
+
+trunc() 	
+
+It returns an integer part of the given number.
+
+max() 	
+
+It returns maximum value of the given numbers.
+
+min() 	
+
+It returns minimum value of the given numbers.
+
+sqrt()
+
+It returns the square root of the given number
+
+cbrt() 	
+
+It returns the cube root of the given number.
+
+pow() 	
+
+It returns value of base to the power of exponent.
+
+random() 	
+
+It returns random number between 0 (inclusive) and 1 (exclusive).
+
+abs() 	
+
+It returns the absolute value of the given number.
+
+PI()
+
+The Math.PI static data property represents the ratio of the circumference of a circle to its diameter, approximately 3.14159.
+
+<--------------------------------------------------------------------->
+
+Date Method
+
+toDateString()      getMilliseconds9()
+getDate()           setDate()
+getFullYear()       setFullYear()
+getMonth()          setHours()
+getDay()            setMilliseconds()
+getTime()
+getHours()          setMinutes()
+getMinutes()        setMonth()
+getSeconds()        setSeconds()
+
+getDate() 	
+
+Get day as a number (1-31)
+
+getFullYear() 	
+
+Get year as a four digit number (yyyy)
+
+getMonth() 	
+
+Get month as a number (0-11)
+
+getDay() 	
+
+Get weekday as a number (0-6)
+
+getHours() 	
+
+Get hour (0-23)
+
+getMinutes() 	
+
+Get minute (0-59)
+
+getSeconds() 	
+
+Get second (0-59)
+
+getMilliseconds() 	
+
+Get millisecond (0-999)
+
+getTime() 	
+
+Get time (milliseconds since January 1, 1970)
+<--------------------------------------------------------------------->
+
+
+<--------------------------------------------------------------------->
+
+The HTML DOM (Document Object Model)
+
+When a web page is loaded, the browser creates a Document Object Model of the page.
+
+The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document."
+
+The W3C DOM standard is separated into 3 different parts:
+
+    Core DOM - standard model for all document types
+    XML DOM - standard model for XML documents
+    HTML DOM - standard model for HTML documents
+
+What is the HTML DOM?
+
+The HTML DOM is a standard object model and programming interface for HTML. It defines:
+
+    The HTML elements as objects
+
+    The properties of all HTML elements
+
+    The methods to access all HTML elements
+
+    The events for all HTML elements
+
+
+var element;
+
+//element = document.all;
+
+//element = document.head;
+
+//element = document.title;
+
+//element = document.body;
+
+//element = document.links;
+
+//element = document.links[0];
+
+//element = document.images;
+
+//element = document.forms;
+
+//element = document.doctype;
+
+//element = document.URL;
+
+//element = document.domain;
+
+//element = document.baseURI;
+
+
+
+//element = document.getElementById("header");
+
+//element = document.getElementsByClassName("list");
+
+//element = document.getElementsByClassName("list")[0]
+
+//element = document.getElementsByTagName("ul");
+
+element = document.getElementsByTagName("ul")[2]
+
+console.log(element);
+
+
+
+var element;
+
+//element = document.getElementById("header").innerText;
+
+//element = document.getElementById("content").innerText;
+
+//element = document.getElementById("content").innerHTML;
+
+//element = document.getElementById("header").innerHTML;
+
+//element = document.getElementById("header").getAttribute("class");
+
+//element = document.getElementById("header").getAttribute("style");
+
+//element = document.getElementById("header").getAttribute("onClick");
+
+//element = document.getElementById("header").getAttributeNode("onClick");
+
+//element = document.getElementById("header").getAttributeNode("style");
+
+//element = document.getElementById("header").getAttributeNode("style").value;
+
+//element = document.getElementById("header").attributes;
+
+//element = document.getElementById("header").attributes[1];
+
+//element = document.getElementById("header").attributes[2].name;
+
+
+/* DOM Set Method */
+
+
+//document.getElementById("header").innerHTML = "<h1>WOW</h1>";
+
+//element = document.getElementById("header").setAttribute("style","border:10px dotted yellow");
+
+//element = document.getElementById("header").attributes[1].value = "xyz";
+
+element = document.getElementById("header").removeAttribute("style");
+
+element = document.getElementById("header").removeAttribute("class");
+
+console.log(element);
+
+
+
+var element;
+
+//element = document.querySelector("#header").innerHTML = "<h1>WOW</h1>";
+
+//element = document.querySelector("#header").getAttribute ("class");
+
+//element = document.querySelectorAll(".list");
+
+element = document.querySelectorAll(".list")[1].innerHTML;
+
+element = document.querySelectorAll("ul");
+
+element = document.querySelectorAll("ul")[1].innerHTML;
+
+element = document.querySelectorAll("#header h1");
+
+element = document.querySelectorAll("#header h1")[1].innerHTML;
+
+console.log(element);
+
+
+
+var element;
+
+//element = document.querySelector("#header").style.border;
+
+//element = document.querySelector("#header").style.color;
+
+//document.querySelector("#header").style.backgroundColor = "tan";
+
+//document.querySelector("#header").style.color = "blue";
+
+//document.querySelector("#header").className = "abc xyz";
+
+//element = document.querySelector("#header").className;
+
+//document.querySelector("#header").classList = "abc xyz";
+
+//element = document.querySelector("#header").classList;
+
+//document.querySelector("#header").classList.add("xyz","efg");
+
+//element = document.querySelector("#header").classList;
+
+//document.querySelector("#header").classList.remove("xyz");
+
+element = document.querySelector("#header").classList;
+
+//console.log(element);
+
+
+
+// onclick event
+//document.getElementById("header").onclick = abc;
+
+// onmouseenter event
+//document.getElementById("header").onmouseenter = abc;
+
+// with addEventListener
+
+/* document.getElementById("header").addEventListener("mouseenter",abc);
+   document.getElementById("header").addEventListener("click", function(){
+       document.getElementById("header").style.border = "10px solid red"; 
+   }); */
+
+/* document.getElementById("header").addEventListener("click", abc);
+   document.getElementById("header").addEventListener("click", function() {
+      this.style.border = "10px solid red";
+   });  */
+
+// with removeEventListener
+
+//document.getElementById("header").removeEventListener('mouseleave',abc);
+
+//document.getElementById("header").addEventListener("click",xyz);
+
+function abc(){
+    document.getElementById("header").style.background = "green";
+}
+
+function xyz() {
+    document.getElementById("header").removeEventListener('mouseleave',abc);
+}
+
+/* ====================================================== */
+
+
+document.querySelector("#inner").addEventListener('click',function(){
+  alert('Inner Div');
+},false);
+
+document.querySelector("#outer").addEventListener('click',function(){
+  alert('Outer Div');
+},false);
+
+
+
+document.getElementById("header").addEventListener("click", abc);
+
+function abc() {
+    //document.getElementById("header").classList.add("xyz","efg");
+    
+    //document.getElementById("header").classList.remove("xyz");
+    
+    //var a = document.getElementById("header").classList.length;
+
+    //document.getElementById("header").classList.toggle("xyz");
+
+    //var a = document.getElementById("header").classList;
+
+    //var a = document.getElementById("header").classList.item(0);
+
+    var a = document.getElementById("header").classList.contains("first");
+    
+    console.log(a);
+}
+
+
+
+//var a = document.getElementById("inner").parentElement;
+
+//var a = document.getElementById("outer").parentElement;
+
+//var a = document.body.parentElement;
+
+//var a = document.getElementById("inner").parentElement.style.background = "red";
+
+/* document.getElementById("child-c").parentElement.style.background = "red";
+    var a = document.getElementById("child-c").parentElement; */
+
+
+document.getElementById("child-c").parentElement.style.background = "red";
+var a = document.getElementById("main").parentNode; 
+
+console.log(a);
+
+
+
+//var a = document.getElementById("outer").children;
+
+//var a = document.getElementById("inner").children;
+
+//var a = document.getElementById("inner").children[1];
+
+/* document.getElementById("inner").children[1].style.background = "red";
+var a = document.getElementById("inner").children[1]; */
+
+/* document.getElementById("inner").children[0].style.background = "red";
+var a = document.getElementById("inner").children[0].innerHTML; */
+
+//var a = document.getElementById("inner").childNodes;
+
+//var a = document.getElementById("inner").childNodes[0].innerHTML;
+
+document.getElementById("inner").childNodes[3].style.background = "red";
+var a = document.getElementById("inner").childNodes[3]; 
+
+console.log(a);
+
+
+
+//var a = document.getElementById("inner").firstElementChild;
+
+//var a = document.getElementById("inner").firstElementChild.innerHTML;
+
+/* document.getElementById("inner").firstElementChild.style.background = "red";
+    var a = document.getElementById("inner").firstElementChild.innerHTML; */
+
+/* document.getElementById("outer").lastElementChild.style.background = "red";
+    var a = document.getElementById("outer").lastElementChild; */
+
+/* document.getElementById("inner").lastElementChild.style.background = "red";
+    var a = document.getElementById("inner").lastElementChild;  */
+
+
+//var a = document.getElementById("inner").firstChild; 
+
+//var a = document.getElementById("inner").lastChild; 
+
+//var a = document.getElementById("child-c").firstChild; 
+
+var a = document.getElementById("child-c").lastChild; 
+
+console.log(a);
+
+
+
+//var a = document.getElementById("child-C").nextElementSibling;
+
+//var a = document.getElementById("child-C").previousElementSibling;
+
+//var a = document.getElementById("child-C").previousElementSibling.innerHTML ;
+
+/* document.getElementById("child-C").previousElementSibling.style.background = "red";
+    var a = document.getElementById("child-C").previousElementSibling.innerHTML; */
+
+/* document.getElementById("child-C").nextElementSibling.style.background = "red";
+    var a = document.getElementById("child-C").nextElementSibling;  */
+
+//var a = document.getElementById("child-E").nextElementSibling;
+
+//var a = document.getElementById("child-head").previousElementSibling;
+
+//var a = document.getElementById("child-C").previousSibling;
+
+var a = document.getElementById("child-C").nextSibling;
+
+console.log(a);
+
+
+
+//var newElement = document.createElement("p");
+
+var newElement = document.createElement("h2");
+
+console.log(newElement);
+
+var newText = document.createTextNode("This is just text");
+
+console.log(newText);
+
+/* Dom Create  Comment*/
+
+var newComment = document.createComment("this is comment");
+
+console.log(newComment);
+
+
+
+/* Dom Create */
+//var newElement = document.createElement("p");
+
+var newElement = document.createElement("h2");
+
+console.log(newElement);
+
+var newText = document.createTextNode("This is just text");
+
+console.log(newText);
+
+/* JavaScript AppendChild*/
+
+newElement.appendChild(newText);
+
+//document.getElementById("test").appendChild(newElement);
+    
+
+/* JavaScript  InsertBefore */
+
+var target = document.getElementById("test");
+target.insertBefore(newElement,target.childNodes[0])
+
+
+
+//  insertAdjacentElement Method
+
+var newElement = document.createElement("h2");
+
+var newText = document.createTextNode("This is just element");
+
+newElement.appendChild(newText);
+
+var target = document.getElementById("test");
+
+target.insertAdjacentElement("afterbegin",newElement);
+
+
+//  insertAdjacentHTML Method
+
+var newElement = "<h2>This is just Html</h2>";
+
+var target = document.getElementById("test");
+
+target.insertAdjacentHTML("afterend",newElement);
+
+//  insertAdjacentText Method
+
+var newText = "<h2>This is just Text</h2>";
+
+var target = document.getElementById("test");
+
+target.insertAdjacentHTML("beforeend",newText);
+
+
+
+/*JavaScript ReplaceChild*/
+
+/*var newElement = document.createElement("li");
+
+var newText = document.createTextNode("WOW new Text");
+
+newElement.appendChild(newText);
+
+var target = document.getElementById("list");
+
+var oldElement = target.children[0];*/
+
+//console.log(oldElement);
+
+//target.replaceChild(newElement,oldElement);
+
+
+
+
+/*JavaScript RemoveChild*/
+
+var target = document.getElementById("list");
+
+var oldElement = target.children[1];
+
+
+
+/* JavaScript CloneNode*/
+
+var target = document.getElementById("list1").children[0];
+
+var copyElement = target.cloneNode(true);
+
+console.log(copyElement);
+
+
+document.getElementById("list2").appendChild(copyElement);
+
+document.getElementById("test").appendChild(copyElement);
+
+
+
+/* JavaScript Contains Method*/
+
+var parentElement = document.getElementById("test");
+
+var target = document.getElementById("abc");
+
+var find = parentElement.contains(target);
+
+console.log(find);
+
+
+
+/* JavaScript hasAttribute*/
+
+var target  = document.getElementById("test");
+
+var find = target.hasAttribute("class");
+
+console.log(find);
+
+
+/* JavaScript hasChildNodes*/
+
+var target  = document.getElementById("test");
+
+var find = target.hasChildNodes();
+
+console.log(find);
+
+
+<--------------------------------------------------------------------->
+
+
+<--------------------------------------------------------------------->
+
+//Form Event
+
+keydown()              select()
+keypress()             submit()
+keyup()                invalid()
+focus()
+blur()
+input()
+change()
+ 
+/*  JavaScript Focus Event  */
+
+		function focusFunction(element){
+			element.style.background = "lime";
+		} 
+
+		/*  JavaScript Blur Event  */
+			function blurFunction(element){
+				element.style.background = "";
+			} 
+
+		/*  JavaScript Input Event  */
+			function inputFunction(element){
+				var x = element.value;
+				document.getElementById("test").innerHTML = x;
+			} 
+
+
+			/*  JavaScript Change Event  */ 
+			function onchangeFunction(element){
+				var x = element.value;
+				document.getElementById("test").innerHTML = x;
+			}
+
+			/*  JavaScript Select Event  */ 
+			function selectFunction(){
+				console.log("You selected some text.");
+			}
+
+			/* JavaScript Submit Event */ 
+
+			/*function submitFunction(){
+				alert("You submitted a form.");
+			}*/
+
+			function submitFunction(){
+				var x = document.getElementById("fname").value;
+				alert("Hello " + x);
+			}
+	
+
+
+var a = 0;
+var id = setInterval(Anim,500);
+
+function Anim(){
+	a = a + 10;
+	if(a == 200){
+		clearInterval(id);
+	}else{
+		var target = document.getElementById("test");
+		//target.style.marginLeft = a + 'px';
+		target.style.width = a + 'px';
+	}
+}
+
+
+/* JavaScript setTimeout*/
+
+/*var id = setTimeout(Anim,5000);
+
+function Anim(){
+	var target = document.getElementById("test");
+	target.style.width = "500px";
+	//console.log("Hello");
+}*/
+
+var id = setTimeout(function(){
+	var target = document.getElementById("test");
+	target.style.width = "500px";
+},5000);
+
+
+/* JavaScript clearTimeout*/
+function stopAnimation(){
+	clearTimeout(id);
+}
+<--------------------------------------------------------------------->
