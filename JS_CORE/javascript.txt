@@ -1728,3 +1728,71 @@ function stopAnimation(){
 	clearTimeout(id);
 }
 <--------------------------------------------------------------------->
+
+
+<--------------------------------------------------------------------->
+
+BOM ()   Browser Object Model
+
+
+Window Height & Width Method
+
+Window Open & Close Method
+
+Window moveby & moveby Method
+
+Window resizeBy & resize Method
+
+Window scrollBy & scroll Method     (Y-AXIS) & (X-AXIS)
+<--------------------------------------------------------------------->
+
+
+<--------------------------------------------------------------------->
+
+JavaScript Location Object 
+
+JavaScript History Object 
+
+<--------------------------------------------------------------------->
+
+
+<--------------------------------------------------------------------->
+
+JS pageYoffset & pageXoffset
+
+JS offsetTop & offsetLeft
+
+JS scrollTop & scrollLeft
+
+JS scrollWidth & scrollHeight
+
+JS offsetWidth & offsetHeight
+
+JS clientWidth & clientHeight
+
+JS ClientX & ClientY
+
+JS pageX & pageY
+
+JS screenX & screenY
+
+JS offsetx & offsetY
+
+JS CtrlKey & AltKey & ShiftKey & MetaKey
+
+JS Button 
+
+JS Key Property
+
+JS Clipboard Events : on Cut on Copy on Paste
+
+JS ononline & onoffline
+
+<--------------------------------------------------------------------->
+
+
+<--------------------------------------------------------------------->
+
+Advance JavaScript - Introduction ...
+
+<--------------------------------------------------------------------->
